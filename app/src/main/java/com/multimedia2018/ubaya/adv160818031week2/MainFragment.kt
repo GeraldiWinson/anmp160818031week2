@@ -9,8 +9,6 @@ import androidx.navigation.Navigation
 import kotlinx.android.synthetic.main.fragment_main.*
 
 class MainFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -25,6 +23,11 @@ class MainFragment : Fragment() {
         btnStart.setOnClickListener{
             val playerName = txtName.text.toString()
             val action = MainFragmentDirections.actionGameFragment(playerName)
+            Navigation.findNavController(it).navigate(action)
+        }
+
+        btnOption.setOnClickListener {
+            val action = MainFragmentDirections.actionOptionFragment()
             Navigation.findNavController(it).navigate(action)
         }
     }
