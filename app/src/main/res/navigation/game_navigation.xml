@@ -60,7 +60,7 @@
         android:name="com.multimedia2018.ubaya.adv160818031week2.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
-    <fragment
+    <dialog
         android:id="@+id/optionFragment"
         android:name="com.multimedia2018.ubaya.adv160818031week2.OptionFragment"
         android:label="fragment_option"
